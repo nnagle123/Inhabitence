@@ -20,3 +20,18 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+function the_url( $url ) {
+    return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'the_url' );
+
+function my_custom_login_logo() {
+	// echo get_stylesheet_directory_uri();
+
+	echo '<style type="text/css">                                                                   
+		h1 a { background-image:url('.get_stylesheet_directory_uri().'../assets/images/logos/inhabitent-logo-text-dark.svg) !important; 
+		height: 120px !important; width: 410px !important; background-size: 280px !important; margin-left: -40px; ;}                            
+	</style>';
+}
+add_action('login_head', 'my_custom_login_logo');

@@ -84,7 +84,7 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  */
 function red_starter_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
-
+	wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.8.2/css/all.css' );
 	wp_enqueue_script( 'red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 
@@ -103,3 +103,15 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+
+
+// <i class="fas fa-phone"></i>
+// <i class="fab fa-facebook-f"></i>
+// <i class="fab fa-twitter"></i>
+// <i class="fab fa-google-plus-square"></i>
+// <i class="fas fa-envelope"></i>
+// <i class="fas fa-search"></i>
+// <i class="fas fa-map-marker-alt"></i>
+
+

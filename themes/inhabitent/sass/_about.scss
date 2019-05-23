@@ -1,0 +1,24 @@
+
+  .pageaboutmaster{
+  .entry-header {
+    background-image: url("../../assets/images/about-hero.jpg");
+    height: 600px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+  }
+
+    .entry-title {
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 4em;
+    }
+
+h2{
+    text-align: center;
+    font-size: 3em;
+}
+  }
