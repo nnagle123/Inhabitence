@@ -7,16 +7,32 @@
         background-repeat: repeat; 
         background-size: 512px 512px;
         color: white;
-      }
+       }
 
 
+  footer{
+    display: grid;
+    grid-column: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr 4fr 1fr;
+  }
 
-      // <i class="fas fa-phone"></i>
-      // <i class="fab fa-facebook-f"></i>
-      // <i class="fab fa-twitter"></i> 
-      // <i class="fab fa-google-plus-square"></i>
-      // <i class="fas fa-envelope"></i>
-      // <i class="fas fa-map-marker-alt"></i>
-      // <img src="../../assets/images/logos/inhabitent-logo-text-dark.svg">
-      
-      // <p><span class="copyright">COPYRIGHT © 2019 INHABITENT<span><p>
+ .copyright {
+    grid-column-start: 3;
+    grid-row-start: 3;
+  }
+
+  img{
+    grid-column-start: 4;
+    grid-row-start: 2;
+    align-self: start;
+  }
+
+  .contactinfo1{
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  .site-info{
+    grid-column-start: 2;
+    grid-row-start: 2;  
+  }

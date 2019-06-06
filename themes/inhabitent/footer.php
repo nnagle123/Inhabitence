@@ -11,21 +11,28 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+				<?php dynamic_sidebar( 'footer' ); ?>
+					
 				</div><!-- .site-info -->
 
+<section class=contactinfo1>
+			<h2>Contact Info</h2>
+			<br>
+			<i class="fas fa-envelope"> info@inhabitent.com</i> <br> <br>
+			<i class="fas fa-phone"> 778-456-7891</i> <br> <br>		
+			<i class="fab fa-facebook-f"> </i>
+			<i class="fab fa-twitter"> </i> 
+			<i class="fab fa-google-plus-square"> </i>
+</section>
 
-				
-		<i class="fas fa-phone"></i>
-<i class="fab fa-facebook-f"></i>
-<i class="fab fa-twitter"></i> 
-<i class="fab fa-google-plus-square"></i>
-<i class="fas fa-envelope"></i>
-<i class="fas fa-map-marker-alt"></i>
+<!-- <i class="fas fa-map-marker-alt"></i> -->
 
-<img src="../../assets/images/logos/inhabitent-logo-text-dark.svg">
+<?php 
+$src = get_template_directory_uri(). '/assets/images/logos/inhabitent-logo-text.svg';
+echo "<img src={$src}>";
+?>
       
-      <p><span class="copyright">COPYRIGHT © 2019 INHABITENT<span><p>
+      <p class="copyright"> COPYRIGHT © 2019 INHABITENT<p>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 

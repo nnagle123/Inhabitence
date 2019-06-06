@@ -7,6 +7,8 @@
 
 ?>
 
+<?php get_header(); ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
@@ -30,7 +32,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<div class="entry-footer">
 		<?php red_starter_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+			</div><!-- .entry-footer -->
 </article><!-- #post-## -->
